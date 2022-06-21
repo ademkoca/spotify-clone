@@ -1,0 +1,111 @@
+@import "./fonts";
+@import "./variables";
+@import "./mixins";
+
+footer {
+    font-family: $font;
+    background-color: $blackColor;
+    height: 400px;
+    padding: 60px 0 20px 0;
+    .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $whiteColor;
+        margin: 0 auto;
+        max-width: $max-width;
+    .top {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        object {
+            @include logo;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+
+            &:first-child {
+               color: black;
+            }
+
+            li {
+                margin: 10px 0;
+
+                &:first-of-type {
+                    color: grey;
+                }
+
+                &:not(:first-of-type):hover {
+                    @include link;
+                }
+            }
+        }
+
+        .social {
+            display: flex;
+            margin-left: 200px;
+
+            div {
+                display: flex;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                align-items: center;
+                justify-content: center;
+                background-color: $socialBackColor;
+                margin: 0 10px;
+
+            i {
+                // @include logo;
+                margin: 0 10px;
+
+                &:hover {
+                    @include link;
+                }
+                
+                
+            }
+        }
+        }
+    }
+    .middle {
+        color: grey;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        p {
+        height: 30px;
+        font-size: 12px;
+        }
+    }
+
+    .bottom {
+        color: grey;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: small;
+
+        .left {
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                
+                li {
+                    margin: 10px;
+                    align-self: flex-start;
+
+                    &:hover {
+                        @include link;
+                    }
+                }
+            }
+        }
+    }
+}
+}

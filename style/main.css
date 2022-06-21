@@ -1,0 +1,344 @@
+@charset "UTF-8";
+header {
+  background-color: #000;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+header nav {
+  margin: 0px auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  height: 58px;
+}
+header nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 30px;
+  cursor: pointer;
+}
+header nav .logo object {
+  /* safari 6.0 - 9.0 */
+  filter: invert(100%);
+  cursor: pointer;
+}
+header nav .logo sup {
+  font-size: small;
+}
+header nav .logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+header nav .nav-links {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: unset;
+}
+header nav ul li {
+  margin: 0 10px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0 20px;
+}
+header nav ul li.separator {
+  cursor: default;
+}
+header nav ul li.separator:hover {
+  color: #fff;
+  cursor: default;
+}
+header nav ul li:hover {
+  color: #1ed760;
+  cursor: pointer;
+}
+header .hero {
+  height: 480px;
+  background-color: #1d75de;
+}
+header .hero .content {
+  margin: 0 auto;
+  padding: 70px 0;
+  max-width: 1200px;
+}
+header .hero .content h1 {
+  font-size: 40px;
+}
+header .hero .content h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+header .hero .content .btn {
+  display: inline-block;
+  border-radius: 500px;
+  color: #fff;
+  background-color: #191414;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+}
+header .hero .content .btn:hover {
+  background-color: #000;
+  cursor: pointer;
+  transform: scale(1.06, 1.06);
+}
+header .hero .content .btn.secondary {
+  border-radius: 500px;
+  color: #fff;
+  background-color: green;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+header .hero .content .btn.secondary:hover {
+  background-color: #1A69C7;
+  cursor: pointer;
+  transform: scale(1.06, 1.06);
+}
+header .hero .content small span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.why-premium {
+  padding: 10px 0;
+  background-color: #f6f6f6;
+  height: 500px;
+  font-family: "Roboto", sans-serif;
+}
+.why-premium .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  margin: 0px auto;
+  padding-top: 40px;
+}
+.why-premium .inner h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.why-premium .inner .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.why-premium .inner .icons .icon {
+  margin: 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.why-premium .inner .icons .icon h4 {
+  margin-bottom: 0;
+}
+.why-premium .inner .icons .icon img {
+  width: 150px;
+}
+
+.pricing {
+  font-family: "Roboto", sans-serif;
+  background-color: #efefef;
+  padding: 60px 0;
+}
+.pricing .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.pricing .inner h2 {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+.pricing .inner ul {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+}
+.pricing .inner ul li {
+  margin: 0 5px;
+}
+.pricing .inner ul li img {
+  max-height: 40px;
+}
+.pricing .inner ul li img.paypal {
+  margin-top: 3px;
+  max-width: 30px;
+}
+.pricing .inner .prices-container {
+  display: flex;
+  margin-top: 30px;
+}
+.pricing .inner .prices-container .prices-card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin: 0 10px;
+  padding: 15px;
+  box-shadow: 1px 1px 19px -2px rgb(148, 148, 148);
+  width: 260px;
+}
+.pricing .inner .prices-container .prices-card .top span {
+  background-color: rgb(46, 119, 208);
+  padding: 5px 8px;
+  font-size: small;
+  font-weight: 600;
+  border-radius: 5px;
+  color: #fff;
+}
+.pricing .inner .prices-container .prices-card .top .name {
+  font-weight: 600;
+  font-size: x-large;
+  margin-bottom: 0;
+}
+.pricing .inner .prices-container .prices-card .top .price {
+  margin: 5px 0px;
+}
+.pricing .inner .prices-container .prices-card .top .accounts {
+  margin-top: 1px;
+  margin-bottom: 10px;
+}
+.pricing .inner .prices-container .prices-card .line-separator {
+  border: 0.01em solid #bcbcbc;
+}
+.pricing .inner .prices-container .prices-card .middle {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pricing .inner .prices-container .prices-card .middle .features p::before {
+  content: "✓";
+  margin-right: 5px;
+}
+.pricing .inner .prices-container .prices-card .middle a {
+  display: inline-block;
+  border-radius: 500px;
+  color: #fff;
+  background-color: #191414;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.pricing .inner .prices-container .prices-card .middle a:hover {
+  background-color: #000;
+  cursor: pointer;
+  transform: scale(1.06, 1.06);
+}
+.pricing .inner .prices-container .prices-card .bottom {
+  font-size: small;
+}
+.pricing .inner .prices-container .prices-card .bottom a:link, .pricing .inner .prices-container .prices-card .bottom a:visited, .pricing .inner .prices-container .prices-card .bottom a a:active, .pricing .inner .prices-container .prices-card .bottom a a:hover {
+  color: inherit;
+}
+
+footer {
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+  height: 400px;
+  padding: 60px 0 20px 0;
+}
+footer .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+footer .inner .top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+footer .inner .top object {
+  /* safari 6.0 - 9.0 */
+  filter: invert(100%);
+}
+footer .inner .top ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+footer .inner .top ul:first-child {
+  color: black;
+}
+footer .inner .top ul li {
+  margin: 10px 0;
+}
+footer .inner .top ul li:first-of-type {
+  color: grey;
+}
+footer .inner .top ul li:not(:first-of-type):hover {
+  color: #1ed760;
+  cursor: pointer;
+}
+footer .inner .top .social {
+  display: flex;
+  margin-left: 200px;
+}
+footer .inner .top .social div {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #222326;
+  margin: 0 10px;
+}
+footer .inner .top .social div i {
+  margin: 0 10px;
+}
+footer .inner .top .social div i:hover {
+  color: #1ed760;
+  cursor: pointer;
+}
+footer .inner .middle {
+  color: grey;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+footer .inner .middle p {
+  height: 30px;
+  font-size: 12px;
+}
+footer .inner .bottom {
+  color: grey;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+}
+footer .inner .bottom .left ul {
+  list-style-type: none;
+  display: flex;
+}
+footer .inner .bottom .left ul li {
+  margin: 10px;
+  align-self: flex-start;
+}
+footer .inner .bottom .left ul li:hover {
+  color: #1ed760;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

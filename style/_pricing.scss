@@ -1,0 +1,130 @@
+@import "./fonts";
+@import "./variables";
+@import "./mixins";
+
+.pricing {
+    font-family: $font;
+    background-color: $pricing-background;
+    padding: 60px 0;
+    .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: $max-width;
+        margin: 0px auto;
+        
+        h2 {
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            padding-left: 0;
+
+            li {
+                margin: 0 5px;
+
+                img {
+                    max-height: 40px;
+
+                    &.paypal {
+                        margin-top: 3px;
+                        max-width: 30px;
+                    }
+                }
+            }
+        }
+
+        .prices-container {
+            display: flex;
+            margin-top: 30px;
+
+            .prices-card {
+                background-color: $whiteColor;
+                border: 1px solid $whiteColor;
+                border-radius: 10px;
+                margin: 0 10px;
+                padding: 15px;
+                -webkit-box-shadow: 1px 1px 19px -2px rgba(148,148,148,1);
+                -moz-box-shadow: 1px 1px 19px -2px rgba(148,148,148,1);
+                box-shadow: 1px 1px 19px -2px rgba(148,148,148,1);
+                width: 260px;
+
+                .top{
+
+                span {
+                    background-color: $pricingLabelColor;
+                    padding: 5px 8px;
+                    font-size: small;
+                    font-weight: $bold;
+                    border-radius: 5px;
+                    color: $whiteColor;
+                }
+
+                .name {
+                    font-weight: $bold;
+                    font-size: x-large;
+                    margin-bottom: 0;
+                }
+                
+                .price {
+                    margin: 5px 0px;
+                    
+
+
+                }
+
+                .accounts {
+                    margin-top: 1px;
+                    margin-bottom: 10px;
+                }
+            }
+
+                .line-separator {
+                    border: 0.01em solid #bcbcbc;
+                }
+
+                .middle {
+
+                    min-height: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .features{                        
+
+                    p {
+                        &::before {
+                            content: '\2713';
+                            margin-right: 5px;
+                        }
+                    }
+
+                }
+                    a {
+                        display: inline-block;
+                        @include button(#fff, $btnBlackColor, $blackColor);
+                        text-align: center;
+                        margin-bottom: 10px;
+
+                    }
+                }
+
+                .bottom {
+                    font-size: small;
+
+                    a {
+                        &:link, &:visited, a:active, a:hover {
+
+                            color: inherit;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

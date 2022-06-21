@@ -1,0 +1,132 @@
+@import "./fonts";
+@import "./variables";
+@import "./mixins";
+
+
+
+header {
+    background-color: $blackColor;
+    color: $whiteColor;
+    font-family: $font;
+    
+    nav {
+        margin: 0px auto;
+        max-width: $max-width;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        height: $nav-height;
+        
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            font-weight: $bold;
+            font-size: $logo;
+            cursor: pointer;
+
+            object {
+                // -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+                //         filter: invert(100%);
+                @include logo;
+                        cursor: pointer;
+
+              }
+            
+            sup {
+                font-size: small;
+            }
+            
+            img {
+                width: 50px;
+                margin-right: 10px;
+            }
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: unset;
+
+            li {
+                margin: 0 10px;
+                font-weight: $bold;
+                cursor: pointer;
+                margin: 0 20px;
+
+                &.separator {
+                    cursor: default;
+
+                    &:hover {
+                        color: $whiteColor;
+                        cursor: default;
+                    }
+                }
+
+                &:hover {
+                    @include link;
+                }
+
+                
+            }
+        }
+    }
+
+   .hero {
+       height: 480px;
+       background-color: $hero-background;
+       
+       .content {
+        margin: 0 auto;
+        padding: 70px 0;   
+        max-width: $max-width;
+
+        h1 {
+            font-size: $h1;
+        }
+
+        h2 {
+            font-size: $h2;
+            font-weight: $thin;
+        }
+
+        .btn {
+            display: inline-block;
+            @include button(#fff, $btnBlackColor, $blackColor);
+            margin-right: 5px;
+            margin-bottom: 30px;
+            
+
+            &.secondary {
+                @include button(#fff,green,$btnSecondaryHoverColor);
+                background-color: transparent;
+                border: 2px solid $whiteColor;
+
+            }
+        }
+        
+
+        small {
+            
+
+            span {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+           
+    }
+
+}
+
+   
+}

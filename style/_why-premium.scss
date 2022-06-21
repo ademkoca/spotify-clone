@@ -1,0 +1,48 @@
+@import "./fonts";
+@import "./variables";
+@import "./mixins";
+
+.why-premium {
+    padding: 10px 0;
+    background-color: $why-background;
+    height: 500px;
+    font-family: $font;
+    
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: $max-width;
+        margin: 0px auto;
+        padding-top: 40px;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .icon {
+                margin: 0 60px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h4 {
+                    margin-bottom: 0;
+                }
+                
+                img {
+                    width: 150px;
+
+                }
+            }
+        }
+    }
+}
